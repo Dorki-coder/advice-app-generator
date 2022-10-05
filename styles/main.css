@@ -1,0 +1,90 @@
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  background-color: var(--DarkBlue);
+}
+
+.card__wrapper {
+  margin-top: 240px;
+  background-color: var(--DarkGrayishBlue);
+  width: 540px;
+  padding: 48px 48px 72px 48px;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  border-radius: 15px;
+  position: relative;
+}
+
+h1 {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 4.08571px;
+  color: var(--NeonGreen);
+}
+
+p {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.3px;
+  color: var(--LightCyan);
+}
+
+.card__dice {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  margin-right: -50%;
+  margin: auto;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--NeonGreen);
+}
+
+.card__dice:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 40px var(--NeonGreen);
+  cursor: pointer;
+}
+
+.attribution {
+  position: absolute;
+  color: var(--LightCyan);
+  bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--NeonGreen);
+}
+
+@media only screen and (max-width: 670px) {
+  .card__wrapper {
+    margin-top: 120px;
+    width: 80%;
+    padding: 40px 24px 64px 24px;
+  }
+}
